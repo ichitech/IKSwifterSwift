@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name = 'IKSwifterSwift'
   s.version = '1.0.1'
   s.summary = 'A handy collection of more than 500 native Swift extensions to boost your productivity.'
-  s.description = ''
+  s.description = 'A handy collection of more than 500 native Swift extensions to boost your productivity'
 
   s.homepage = 'https://github.com/SwifterSwift/SwifterSwift'
   s.license = { type: 'MIT', file: 'LICENSE' }
