@@ -14,9 +14,7 @@ A handy collection of more than 500 native Swift extensions to boost your produc
 - **iOS** 10.0+
 - Swift 5.0+
 
-## Looking to use SwifterSwift for older versions of Swift
-
-IKSwifterSwift is Swift v5.0+ compatible starting from v5
+## IKSwifterSwift is Swift v5.0+ compatible starting from v1.0.1
 
 ## Installation
 
@@ -29,11 +27,11 @@ IKSwifterSwift is Swift v5.0+ compatible starting from v5
 <pre><code class="ruby language-ruby">pod 'IKSwifterSwift'</code></pre>
 
 <h4>- Integrate Foundation extensions only:</h4>
-<pre><code class="ruby language-ruby">pod 'SwifterSwift/Foundation'</code></pre>
+<pre><code class="ruby language-ruby">pod 'IKSwifterSwift/Foundation'</code></pre>
 
 <h4>- Integrate UIKit extensions only:</h4>
-<pre><code class="ruby language-ruby">pod 'SwifterSwift/UIKit'</code></pre>
+<pre><code class="ruby language-ruby">pod 'IKSwifterSwift/UIKit'</code></pre>
+</details>
 
 ## License
-
 IKSwifterSwift is released under the MIT license.
