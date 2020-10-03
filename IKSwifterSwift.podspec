@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary = 'A handy collection of more than 500 native Swift extensions to boost your productivity.'
   s.description = 'A handy collection of more than 500 native Swift extensions to boost your productivity....'
 
-  s.homepage = 'https://github.com/SwifterSwift/SwifterSwift'
+  s.homepage = 'https://github.com/ichitech/IKSwifterSwift'
   s.license = { type: 'MIT', file: 'LICENSE' }
   s.authors = { 'IchiTech' => 'ichitech89@gmail.com' }
   s.social_media_url = 'https://github.com/ichitech'
