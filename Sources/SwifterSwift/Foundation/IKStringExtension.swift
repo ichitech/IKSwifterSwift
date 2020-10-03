@@ -18,7 +18,7 @@ public extension String {
     }
     
     // Replaces all occurances from string with replacement
-    public func replace(string: String, replacement: String) -> String {
+    func replace(string: String, replacement: String) -> String {
         return self.replacingOccurrences(of: string, with: replacement, options: String.CompareOptions.literal, range: nil)
     }
     

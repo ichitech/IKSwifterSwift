@@ -16,8 +16,8 @@ public extension UIView {
     
     // swiftlint:disable superfluous_disable_command line_length
     func registerForNigthModeNotifications() {
-        NotificationCenter.default.addObserver(self, selector: #selector(UserInterfaceProtocol.notificationDidChangeNightMode(_:)), name: UIView.changeNightMode, object: nil)
-        self.perform(#selector(UserInterfaceProtocol.notificationDidChangeNightMode(_:)), with: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(IKSwifterSwift.UserInterfaceProtocol.notificationDidChangeNightMode(_:)), name: UIView.changeNightMode, object: nil)
+        self.perform(#selector(IKSwifterSwift.UserInterfaceProtocol.notificationDidChangeNightMode(_:)), with: nil)
     }
     // swiftlint:disable superfluous_disable_command line_length
 

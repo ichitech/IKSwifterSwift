@@ -14,7 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		07898B5D1F278D7600558C97 /* SwifterSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwifterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07898B5D1F278D7600558C97 /* IKSwifterSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IKSwifterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07898B8E1F278E6300558C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07898B8F1F278E6300558C97 /* SwifterSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwifterSwift.h; sourceTree = "<group>"; };
 		FE6D4AD225223D6300A41995 /* IKStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKStringExtension.swift; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		07898B5E1F278D7600558C97 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				07898B5D1F278D7600558C97 /* SwifterSwift.framework */,
+				07898B5D1F278D7600558C97 /* IKSwifterSwift.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,7 +123,7 @@
 			);
 			name = "SwifterSwift-iOS";
 			productName = "SwifterSwift-iOS";
-			productReference = 07898B5D1F278D7600558C97 /* SwifterSwift.framework */;
+			productReference = 07898B5D1F278D7600558C97 /* IKSwifterSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -342,7 +342,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.swifterswift.SwifterSwift-iOS";
-				PRODUCT_NAME = SwifterSwift;
+				PRODUCT_NAME = IKSwifterSwift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -412,7 +412,7 @@
 				MARKETING_VERSION = 5.2.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.swifterswift.SwifterSwift-iOS";
-				PRODUCT_NAME = SwifterSwift;
+				PRODUCT_NAME = IKSwifterSwift;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
