@@ -63,43 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				FE6D4AC625223C9000A41995 /* Protocols */,
-				FE6D4AC325223C9000A41995 /* StoreKit */,
-				FE6D4AC425223C9000A41995 /* WebKit */,
-				FE6D4AC525223C9000A41995 /* CoreGraphics */,
 				FE6D4AC725223C9000A41995 /* UIKit */,
-				FE6D4AC825223C9000A41995 /* Dispatch */,
-				FE6D4AC925223C9000A41995 /* SceneKit */,
 				FE6D4ACA25223C9000A41995 /* Foundation */,
-				FE6D4ACB25223C9000A41995 /* Shared */,
-				FE6D4ACC25223C9000A41995 /* SpriteKit */,
-				FE6D4ACD25223C9000A41995 /* MapKit */,
-				FE6D4ACE25223C9000A41995 /* SwiftStdlib */,
-				FE6D4ACF25223C9000A41995 /* CoreLocation */,
-				FE6D4AD025223C9000A41995 /* AppKit */,
-				FE6D4AD125223C9000A41995 /* CoreAnimation */,
 			);
 			path = SwifterSwift;
-			sourceTree = "<group>";
-		};
-		FE6D4AC325223C9000A41995 /* StoreKit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = StoreKit;
-			sourceTree = "<group>";
-		};
-		FE6D4AC425223C9000A41995 /* WebKit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = WebKit;
-			sourceTree = "<group>";
-		};
-		FE6D4AC525223C9000A41995 /* CoreGraphics */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CoreGraphics;
 			sourceTree = "<group>";
 		};
 		FE6D4AC625223C9000A41995 /* Protocols */ = {
@@ -118,75 +85,12 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
-		FE6D4AC825223C9000A41995 /* Dispatch */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Dispatch;
-			sourceTree = "<group>";
-		};
-		FE6D4AC925223C9000A41995 /* SceneKit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SceneKit;
-			sourceTree = "<group>";
-		};
 		FE6D4ACA25223C9000A41995 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
 				FE6D4AD225223D6300A41995 /* IKStringExtension.swift */,
 			);
 			path = Foundation;
-			sourceTree = "<group>";
-		};
-		FE6D4ACB25223C9000A41995 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		FE6D4ACC25223C9000A41995 /* SpriteKit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SpriteKit;
-			sourceTree = "<group>";
-		};
-		FE6D4ACD25223C9000A41995 /* MapKit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MapKit;
-			sourceTree = "<group>";
-		};
-		FE6D4ACE25223C9000A41995 /* SwiftStdlib */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SwiftStdlib;
-			sourceTree = "<group>";
-		};
-		FE6D4ACF25223C9000A41995 /* CoreLocation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CoreLocation;
-			sourceTree = "<group>";
-		};
-		FE6D4AD025223C9000A41995 /* AppKit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = AppKit;
-			sourceTree = "<group>";
-		};
-		FE6D4AD125223C9000A41995 /* CoreAnimation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CoreAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
