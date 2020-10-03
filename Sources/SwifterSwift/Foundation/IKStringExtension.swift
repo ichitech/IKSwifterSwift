@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 // MARK: - String extensions
-extension String {
+public extension String {
    
     // Remove all the whitespace from the beginning and end of a String
     func trimString() -> String {
