@@ -8,6 +8,12 @@
 
 #if canImport(UIKit) && os(iOS)
 import UIKit
+#if canImport(MBProgressHUD)
+import MBProgressHUD
+#endif
+#if canImport(SwiftSpinner)
+import SwiftSpinner
+#endif
 
 // MARK: - Methods
 extension UIViewController {

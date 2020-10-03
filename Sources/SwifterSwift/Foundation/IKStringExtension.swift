@@ -6,6 +6,7 @@
 //  Copyright © 2020 SwifterSwift
 //
 
+#if canImport(Foundation) && canImport(UIKit) && os(iOS)
 import Foundation
 import UIKit
 
@@ -38,3 +39,5 @@ public extension String {
         return String(self[range])
     }
 }
+
+#endif

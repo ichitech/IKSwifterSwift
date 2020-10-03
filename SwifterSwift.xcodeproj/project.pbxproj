@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		07898B901F278F0800558C97 /* SwifterSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 07898B8F1F278E6300558C97 /* SwifterSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7D1E89D98CE80679A764440 /* Pods_SwifterSwift_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4201FC1054A50F45AA59D8 /* Pods_SwifterSwift_iOS.framework */; };
 		FE6D4AD325223D6400A41995 /* IKStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4AD225223D6300A41995 /* IKStringExtension.swift */; };
 		FE6D4AD625223E1900A41995 /* IKViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4AD525223E1900A41995 /* IKViewExtension.swift */; };
 		FE6D4ADD25223ED100A41995 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4ADC25223ED100A41995 /* Protocols.swift */; };
 		FEC296572528BF9300F76E24 /* IKViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC296562528BF9300F76E24 /* IKViewControllerExtension.swift */; };
 		FEC2965A2528C09300F76E24 /* IKApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC296592528C09300F76E24 /* IKApplicationExtension.swift */; };
 		FEC2965D2528C29500F76E24 /* IKSearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC2965C2528C29500F76E24 /* IKSearchBarExtension.swift */; };
+		FEC2966C2528C71300F76E24 /* IKObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC2966B2528C71300F76E24 /* IKObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07898B5D1F278D7600558C97 /* IKSwifterSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IKSwifterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07898B8E1F278E6300558C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07898B8F1F278E6300558C97 /* SwifterSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwifterSwift.h; sourceTree = "<group>"; };
+		2C7440E8AE93EFF03A90A0D4 /* Pods-SwifterSwift-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwifterSwift-iOS.release.xcconfig"; path = "Target Support Files/Pods-SwifterSwift-iOS/Pods-SwifterSwift-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		7B4201FC1054A50F45AA59D8 /* Pods_SwifterSwift_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwifterSwift_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB8C1DBF7D499412A9E24CA8 /* Pods-SwifterSwift-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwifterSwift-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SwifterSwift-iOS/Pods-SwifterSwift-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		FE6D4AD225223D6300A41995 /* IKStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKStringExtension.swift; sourceTree = "<group>"; };
 		FE6D4AD525223E1900A41995 /* IKViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKViewExtension.swift; sourceTree = "<group>"; };
 		FE6D4ADC25223ED100A41995 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		FEC296562528BF9300F76E24 /* IKViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKViewControllerExtension.swift; sourceTree = "<group>"; };
 		FEC296592528C09300F76E24 /* IKApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKApplicationExtension.swift; sourceTree = "<group>"; };
 		FEC2965C2528C29500F76E24 /* IKSearchBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKSearchBarExtension.swift; sourceTree = "<group>"; };
+		FEC2966B2528C71300F76E24 /* IKObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D1E89D98CE80679A764440 /* Pods_SwifterSwift_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05AA1A8D9ABA2FFFB7F68CB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB8C1DBF7D499412A9E24CA8 /* Pods-SwifterSwift-iOS.debug.xcconfig */,
+				2C7440E8AE93EFF03A90A0D4 /* Pods-SwifterSwift-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		07898B511F278CF900558C97 = {
 			isa = PBXGroup;
 			children = (
 				07898B8D1F278E6300558C97 /* Sources */,
 				07898B5E1F278D7600558C97 /* Products */,
+				05AA1A8D9ABA2FFFB7F68CB3 /* Pods */,
+				301A3AC15D1BD47918016065 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +81,14 @@
 				FE6D4AC225223C9000A41995 /* SwifterSwift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		301A3AC15D1BD47918016065 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B4201FC1054A50F45AA59D8 /* Pods_SwifterSwift_iOS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FE6D4AC225223C9000A41995 /* SwifterSwift */ = {
@@ -98,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				FE6D4AD225223D6300A41995 /* IKStringExtension.swift */,
+				FEC2966B2528C71300F76E24 /* IKObject.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -120,6 +147,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07898B631F278D7600558C97 /* Build configuration list for PBXNativeTarget "SwifterSwift-iOS" */;
 			buildPhases = (
+				01B383E58FD2BCCBD0D78695 /* [CP] Check Pods Manifest.lock */,
 				07898B581F278D7600558C97 /* Sources */,
 				07898B591F278D7600558C97 /* Frameworks */,
 				07898B5A1F278D7600558C97 /* Headers */,
@@ -181,6 +209,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		01B383E58FD2BCCBD0D78695 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwifterSwift-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		07A1C43E224FBFC6003272E4 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,6 +260,7 @@
 				FE6D4AD625223E1900A41995 /* IKViewExtension.swift in Sources */,
 				FEC296572528BF9300F76E24 /* IKViewControllerExtension.swift in Sources */,
 				FEC2965A2528C09300F76E24 /* IKApplicationExtension.swift in Sources */,
+				FEC2966C2528C71300F76E24 /* IKObject.swift in Sources */,
 				FE6D4AD325223D6400A41995 /* IKStringExtension.swift in Sources */,
 				FEC2965D2528C29500F76E24 /* IKSearchBarExtension.swift in Sources */,
 			);
@@ -292,6 +343,7 @@
 		};
 		07898B641F278D7600558C97 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB8C1DBF7D499412A9E24CA8 /* Pods-SwifterSwift-iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -369,6 +421,7 @@
 		};
 		07898B651F278D7600558C97 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C7440E8AE93EFF03A90A0D4 /* Pods-SwifterSwift-iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

@@ -5,10 +5,14 @@ use_frameworks!
 inhibit_all_warnings!
 platform :ios, '10.0'
 
+workspace 'SwifterSwift'
+project 'SwifterSwift.xcodeproj'
+
 def import_pods
     pod 'SwifterSwift'
     pod 'Alamofire'
     pod 'SwiftSpinner'
+    pod 'MBProgressHUD'
 end
 
 target 'SwifterSwift-iOS'  do
