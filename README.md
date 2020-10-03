@@ -16,10 +16,8 @@ A handy collection of more than 500 native Swift extensions to boost your produc
 
 ## IKSwifterSwift is Swift v5.0+ compatible starting from v1.0.1
 
-## Installation
+## Installation using CocoaPods
 
-<details>
-<summary>CocoaPods</summary>
 </br>
 <p>To integrate SwifterSwift into your Xcode project using <a href="http://cocoapods.org">CocoaPods</a>, specify it in your <code>Podfile</code>:</p>
 
@@ -31,7 +29,6 @@ A handy collection of more than 500 native Swift extensions to boost your produc
 
 <h4>- Integrate UIKit extensions only:</h4>
 <pre><code class="ruby language-ruby">pod 'IKSwifterSwift/UIKit'</code></pre>
-</details>
 
 ## License
 IKSwifterSwift is released under the MIT license.
