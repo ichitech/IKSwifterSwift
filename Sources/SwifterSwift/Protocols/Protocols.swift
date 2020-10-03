@@ -7,8 +7,8 @@
 
 import UIKit
 
-// MARK: Protocol for change UI
-@objc protocol UserInterfaceProtocol {
+// MARK:- Protocol for change UI
+@objc public protocol UserInterfaceProtocol {
     
     // Call this method to reload the localization strings in current view controller.
     @objc optional func reloadLocalizedStrings()
@@ -17,12 +17,12 @@ import UIKit
     func notificationDidChangeNightMode(_ notification: NSNotification?)
 }
 
-// MARK: Required protocol for tableview cell
-protocol TableViewCellProtocol {
+// MARK:- Required protocol for tableview cell
+public protocol TableViewCellProtocol {
     static func identifier() -> String
 }
 
-// MARK: Required protocol for Realm
-@objc protocol RealmActionProtocol {
+// MARK:- Required protocol for Realm
+@objc public protocol RealmActionProtocol {
     @objc func delete(completion: ((Bool) -> Void)? )
 }  
