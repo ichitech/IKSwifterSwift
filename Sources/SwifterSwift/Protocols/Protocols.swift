@@ -7,16 +7,6 @@
 
 import UIKit
 
-// MARK: - Protocol for change UI
-@objc public protocol UserInterfaceProtocol {
-    
-    // Call this method to reload the localization strings in current view controller.
-    @objc optional func reloadLocalizedStrings()
-    
-    // The method will be called when the night mode did change.
-    func notificationDidChangeNightMode(_ notification: NSNotification?)
-}
-
 // MARK: - Required protocol for tableview cell
 public protocol TableViewCellProtocol {
     static func identifier() -> String

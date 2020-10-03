@@ -9,6 +9,16 @@
 import Foundation
 import UIKit
 
+// MARK: - Protocol for change UI
+@objc public protocol UserInterfaceProtocol {
+    
+    // Call this method to reload the localization strings in current view controller.
+    @objc optional func reloadLocalizedStrings()
+    
+    // The method will be called when the night mode did change.
+    func notificationDidChangeNightMode(_ notification: NSNotification?)
+}
+
 // MARK: - UIView extensions
 public extension UIView {
     
