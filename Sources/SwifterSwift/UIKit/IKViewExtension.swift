@@ -9,32 +9,9 @@
 import Foundation
 import UIKit
 
-// MARK: - Protocol for change UI
-@objc public protocol UserInterfaceProtocol {
-    
-    // Call this method to reload the localization strings in current view controller.
-    @objc optional func reloadLocalizedStrings()
-    
-    // The method will be called when the night mode did change.
-    func notificationDidChangeNightMode(_ notification: NSNotification?)
-}
-
 // MARK: - UIView extensions
 public extension UIView {
-    
-    static var changeNightMode = Notification.Name("com.ik.changeNightMode")
-    
-    // swiftlint:disable superfluous_disable_command line_length
-    func registerForNigthModeNotifications() {
-        NotificationCenter.default.addObserver(self, selector: #selector(IKSwifterSwift.UserInterfaceProtocol.notificationDidChangeNightMode(_:)), name: UIView.changeNightMode, object: nil)
-        self.perform(#selector(IKSwifterSwift.UserInterfaceProtocol.notificationDidChangeNightMode(_:)), with: nil)
-    }
-    // swiftlint:disable superfluous_disable_command line_length
-
-    func unregisterForNigthModeNotifications() {
-        NotificationCenter.default.removeObserver(self, name: UIView.changeNightMode, object: nil)
-    }
-    
+        
     private var allSubViews: [UIView] {
         var array = [self.subviews].flatMap {$0}
         array.forEach {
