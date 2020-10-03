@@ -6,7 +6,7 @@
 //  Copyright © 2020 SwifterSwift
 //
 
-import Foundation
+#if canImport(UIKit) && os(iOS)
 import UIKit
 
 // MARK: - Protocol for change UI
@@ -19,7 +19,7 @@ import UIKit
     func notificationDidChangeNightMode(_ notification: NSNotification?)
 }
 
-// MARK: - UIView extensions
+// MARK: - Methods
 public extension UIView {
     
     static var changeNightMode = Notification.Name("com.ik.changeNightMode")
@@ -29,12 +29,12 @@ public extension UIView {
         NotificationCenter.default.addObserver(self, selector: #selector(IKSwifterSwift.UserInterfaceProtocol.notificationDidChangeNightMode(_:)), name: UIView.changeNightMode, object: nil)
         self.perform(#selector(IKSwifterSwift.UserInterfaceProtocol.notificationDidChangeNightMode(_:)), with: nil)
     }
-    // swiftlint:disable superfluous_disable_command line_length
 
     func unregisterForNigthModeNotifications() {
         NotificationCenter.default.removeObserver(self, name: UIView.changeNightMode, object: nil)
     }
-    
+    // swiftlint:enable superfluous_disable_command line_length
+
     private var allSubViews: [UIView] {
         var array = [self.subviews].flatMap {$0}
         array.forEach {
@@ -51,9 +51,9 @@ public extension UIView {
     }
 
     // swiftlint:disable superfluous_disable_command force_cast
-    func find<T>(by type: T.Type, where tagLessThanOrEqual: Int? = nil) -> [T] {
+    func find<T>(by type: T.Type, whereTagLessThanOrEqual tag: Int? = nil) -> [T] {
         let array = self.allSubViews.filter { (view) -> Bool in
-            if let tagLessThanOrEqual = tagLessThanOrEqual {
+            if let tagLessThanOrEqual = tag {
                 return view.isKind(of: type as! AnyClass) == true && view.tag <= tagLessThanOrEqual
             } else {
                 return view.isKind(of: type as! AnyClass) == true
@@ -65,9 +65,13 @@ public extension UIView {
         return []
     }
     
-    func find<T>(by type: T.Type, whereTagGreaterThanOrEqual tag: Int) -> [T] {
+    func find<T>(by type: T.Type, whereTagGreaterThanOrEqual tag: Int? = nil) -> [T] {
         let array = self.allSubViews.filter { (view) -> Bool in
-            return view.isKind(of: type as! AnyClass) == true && view.tag >= tag
+            if let tagGreaterThanOrEqual = tag {
+                return view.isKind(of: type as! AnyClass) == true && view.tag >= tagGreaterThanOrEqual
+            } else {
+                return view.isKind(of: type as! AnyClass) == true
+            }
         }
         if !array.isEmpty {
             return array as! [T]
@@ -85,3 +89,5 @@ public extension UIView {
         alpha = disabled ? 0.65 : 1
     }
 }
+
+#endif
