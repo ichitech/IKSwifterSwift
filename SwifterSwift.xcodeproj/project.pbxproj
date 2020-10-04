@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		07898B901F278F0800558C97 /* SwifterSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 07898B8F1F278E6300558C97 /* SwifterSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7D1E89D98CE80679A764440 /* Pods_SwifterSwift_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4201FC1054A50F45AA59D8 /* Pods_SwifterSwift_iOS.framework */; };
 		FE6D4AD325223D6400A41995 /* IKStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4AD225223D6300A41995 /* IKStringExtension.swift */; };
 		FE6D4AD625223E1900A41995 /* IKViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4AD525223E1900A41995 /* IKViewExtension.swift */; };
 		FE6D4ADD25223ED100A41995 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4ADC25223ED100A41995 /* Protocols.swift */; };
@@ -16,6 +15,7 @@
 		FEC2965A2528C09300F76E24 /* IKApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC296592528C09300F76E24 /* IKApplicationExtension.swift */; };
 		FEC2965D2528C29500F76E24 /* IKSearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC2965C2528C29500F76E24 /* IKSearchBarExtension.swift */; };
 		FEC2966C2528C71300F76E24 /* IKObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC2966B2528C71300F76E24 /* IKObject.swift */; };
+		FEC2966E2528CBBE00F76E24 /* Pods_SwifterSwift_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4201FC1054A50F45AA59D8 /* Pods_SwifterSwift_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7D1E89D98CE80679A764440 /* Pods_SwifterSwift_iOS.framework in Frameworks */,
+				FEC2966E2528CBBE00F76E24 /* Pods_SwifterSwift_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
