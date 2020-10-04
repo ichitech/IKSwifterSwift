@@ -75,4 +75,20 @@ extension UIViewController {
     }
 }
 
+
+// MARK: - Properties
+public extension UIViewController {
+    
+    var isModal: Bool {
+        return presentingViewController?.presentedViewController == self ||
+            (navigationController != nil && navigationController?.presentingViewController?.presentedViewController == navigationController) ||
+            (tabBarController?.presentingViewController is UITabBarController)
+    }
+    
+    var isAlertController: Bool {
+        return UIWindow.current?.visibleViewController is UIAlertController
+    }
+    
+}
+
 #endif

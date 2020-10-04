@@ -51,6 +51,16 @@ public extension UIView {
     }
 
     // swiftlint:disable superfluous_disable_command force_cast
+    func find<T>(by type: T.Type) -> [T] {
+        let array = self.allSubViews.filter { (view) -> Bool in
+            return view.isKind(of: type as! AnyClass) == true
+        }
+        if !array.isEmpty {
+            return array as! [T]
+        }
+        return []
+    }
+    
     func find<T>(by type: T.Type, whereTagLessThanOrEqual tag: Int? = nil) -> [T] {
         let array = self.allSubViews.filter { (view) -> Bool in
             if let tagLessThanOrEqual = tag {

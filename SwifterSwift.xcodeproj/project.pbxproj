@@ -16,6 +16,9 @@
 		FEC2965D2528C29500F76E24 /* IKSearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC2965C2528C29500F76E24 /* IKSearchBarExtension.swift */; };
 		FEC2966C2528C71300F76E24 /* IKObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC2966B2528C71300F76E24 /* IKObject.swift */; };
 		FEC2966E2528CBBE00F76E24 /* Pods_SwifterSwift_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4201FC1054A50F45AA59D8 /* Pods_SwifterSwift_iOS.framework */; };
+		FEC2999E2529CDC600F76E24 /* IKUIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC2999D2529CDC600F76E24 /* IKUIWindowExtension.swift */; };
+		FEC299A12529D48600F76E24 /* IKTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC299A02529D48600F76E24 /* IKTableViewExtension.swift */; };
+		FEC299A42529D7A500F76E24 /* IKCoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC299A32529D7A500F76E24 /* IKCoderExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		FEC296592528C09300F76E24 /* IKApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKApplicationExtension.swift; sourceTree = "<group>"; };
 		FEC2965C2528C29500F76E24 /* IKSearchBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKSearchBarExtension.swift; sourceTree = "<group>"; };
 		FEC2966B2528C71300F76E24 /* IKObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKObject.swift; sourceTree = "<group>"; };
+		FEC2999D2529CDC600F76E24 /* IKUIWindowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKUIWindowExtension.swift; sourceTree = "<group>"; };
+		FEC299A02529D48600F76E24 /* IKTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKTableViewExtension.swift; sourceTree = "<group>"; };
+		FEC299A32529D7A500F76E24 /* IKCoderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKCoderExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,8 @@
 				FEC296562528BF9300F76E24 /* IKViewControllerExtension.swift */,
 				FEC296592528C09300F76E24 /* IKApplicationExtension.swift */,
 				FEC2965C2528C29500F76E24 /* IKSearchBarExtension.swift */,
+				FEC2999D2529CDC600F76E24 /* IKUIWindowExtension.swift */,
+				FEC299A02529D48600F76E24 /* IKTableViewExtension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -125,6 +133,7 @@
 			children = (
 				FE6D4AD225223D6300A41995 /* IKStringExtension.swift */,
 				FEC2966B2528C71300F76E24 /* IKObject.swift */,
+				FEC299A32529D7A500F76E24 /* IKCoderExtension.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -259,6 +268,9 @@
 				FE6D4ADD25223ED100A41995 /* Protocols.swift in Sources */,
 				FE6D4AD625223E1900A41995 /* IKViewExtension.swift in Sources */,
 				FEC296572528BF9300F76E24 /* IKViewControllerExtension.swift in Sources */,
+				FEC299A42529D7A500F76E24 /* IKCoderExtension.swift in Sources */,
+				FEC299A12529D48600F76E24 /* IKTableViewExtension.swift in Sources */,
+				FEC2999E2529CDC600F76E24 /* IKUIWindowExtension.swift in Sources */,
 				FEC2965A2528C09300F76E24 /* IKApplicationExtension.swift in Sources */,
 				FEC2966C2528C71300F76E24 /* IKObject.swift in Sources */,
 				FE6D4AD325223D6400A41995 /* IKStringExtension.swift in Sources */,
