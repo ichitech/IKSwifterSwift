@@ -19,6 +19,7 @@
 		FEC2999E2529CDC600F76E24 /* IKUIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC2999D2529CDC600F76E24 /* IKUIWindowExtension.swift */; };
 		FEC299A12529D48600F76E24 /* IKTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC299A02529D48600F76E24 /* IKTableViewExtension.swift */; };
 		FEC299A42529D7A500F76E24 /* IKCoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC299A32529D7A500F76E24 /* IKCoderExtension.swift */; };
+		FEC29B0F252A115000F76E24 /* IKColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC29B0E252A115000F76E24 /* IKColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FEC2999D2529CDC600F76E24 /* IKUIWindowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKUIWindowExtension.swift; sourceTree = "<group>"; };
 		FEC299A02529D48600F76E24 /* IKTableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKTableViewExtension.swift; sourceTree = "<group>"; };
 		FEC299A32529D7A500F76E24 /* IKCoderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKCoderExtension.swift; sourceTree = "<group>"; };
+		FEC29B0E252A115000F76E24 /* IKColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IKColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				FEC2965C2528C29500F76E24 /* IKSearchBarExtension.swift */,
 				FEC2999D2529CDC600F76E24 /* IKUIWindowExtension.swift */,
 				FEC299A02529D48600F76E24 /* IKTableViewExtension.swift */,
+				FEC29B0E252A115000F76E24 /* IKColorExtension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				FE6D4ADD25223ED100A41995 /* Protocols.swift in Sources */,
 				FE6D4AD625223E1900A41995 /* IKViewExtension.swift in Sources */,
+				FEC29B0F252A115000F76E24 /* IKColorExtension.swift in Sources */,
 				FEC296572528BF9300F76E24 /* IKViewControllerExtension.swift in Sources */,
 				FEC299A42529D7A500F76E24 /* IKCoderExtension.swift in Sources */,
 				FEC299A12529D48600F76E24 /* IKTableViewExtension.swift in Sources */,

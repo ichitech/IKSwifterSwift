@@ -20,14 +20,14 @@ extension UIViewController {
     
     static var changeNightMode = Notification.Name("com.ik.changeNightMode")
         
-    // Register the night mode notification for the current viewcontroller.
+    /// Register the night mode notification for the current viewcontroller.
     // swiftlint:disable superfluous_disable_command line_length
     func registerForNigthModeNotifications() {
         NotificationCenter.default.addObserver(self, selector: #selector(UserInterfaceProtocol.notificationDidChangeNightMode(_:)), name: UIViewController.changeNightMode, object: nil)
         self.perform(#selector(UserInterfaceProtocol.notificationDidChangeNightMode(_:)), with: nil)
     }
 
-    // Deregister the night mode notification for the current viewcontroller.
+    /// Deregister the night mode notification for the current viewcontroller.
     func unregisterForNigthModeNotifications() {
         NotificationCenter.default.removeObserver(self, name: UIViewController.changeNightMode, object: nil)
     }

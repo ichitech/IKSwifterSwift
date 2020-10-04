@@ -6,29 +6,25 @@
 //  Copyright © 2020 SwifterSwift
 //
 
-#if canImport(Foundation) && canImport(UIKit) && os(iOS)
+#if canImport(Foundation)
 import Foundation
-import UIKit
+#endif
 
-// MARK: - String extensions
+#if canImport(UIKit)
+import UIKit
+#endif
+
+// MARK: - Methods
 public extension String {
    
-    // Remove all the whitespace from the beginning and end of a String
+    /// Remove all the whitespace from the beginning and end of a String
     func trimString() -> String {
         return self.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines)
     }
     
-    // Replaces all occurances from string with replacement
+    /// Replaces all occurances from string with replacement
     func replace(string: String, replacement: String) -> String {
         return self.replacingOccurrences(of: string, with: replacement, options: String.CompareOptions.literal, range: nil)
-    }
-    
-    // Validate URL
-    var isUrl: Bool {
-        if let url = URL(string: self) {
-            return UIApplication.shared.canOpenURL(url)
-        }
-        return false
     }
     
     func sub(toIndex index: Int = 4) -> String {
@@ -40,4 +36,14 @@ public extension String {
     }
 }
 
-#endif
+// MARK: - Properties
+public extension String {
+    
+    /// Validate URL
+    var isUrl: Bool {
+        if let url = URL(string: self) {
+            return UIApplication.shared.canOpenURL(url)
+        }
+        return false
+    }
+}
