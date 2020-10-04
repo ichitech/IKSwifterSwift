@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'IKSwifterSwift'
-  s.version = '1.0.7'
+  s.version = '1.0.8'
   s.summary = 'A handy collection of more than 500 native Swift extensions to boost your productivity.'
   s.description = 'A handy collection of more than 500 native Swift extensions to boost your productivity....'
 
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source = { git: 'https://github.com/ichitech/IKSwifterSwift.git', tag: s.version.to_s }
   s.source_files = 'Sources/SwifterSwift/**/*.swift'
-  s.dependency 'SwifterSwift'
+  s.weak_framework = 'SwifterSwift', 'MBProgressHUD', 'SwiftSpinner'
 
   # SwiftStdlib Extensions
   s.subspec 'Protocols' do |sp|
