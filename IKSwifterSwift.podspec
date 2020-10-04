@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source = { git: 'https://github.com/ichitech/IKSwifterSwift.git', tag: s.version.to_s }
   s.source_files = 'Sources/SwifterSwift/**/*.swift'
-  s.weak_framework = 'SwifterSwift', 'MBProgressHUD', 'SwiftSpinner'
+  s.weak_framework = 'SwifterSwift', 'SwiftSpinner'
 
   # SwiftStdlib Extensions
   s.subspec 'Protocols' do |sp|
