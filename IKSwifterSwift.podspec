@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'IKSwifterSwift'
-  s.version = '1.1.1'
+  s.version = '1.1.2'
   s.summary = 'A handy collection of more than 500 native Swift extensions to boost your productivity.'
   s.description = 'A handy collection of more than 500 native Swift extensions to boost your productivity....'
 
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.source = { git: 'https://github.com/ichitech/IKSwifterSwift.git', tag: s.version.to_s }
   s.source_files = 'Sources/SwifterSwift/**/*.swift'
 
-  # SwiftStdlib Extensions
+  # Protocols Extensions
   s.subspec 'Protocols' do |sp|
     sp.source_files  = 'Sources/SwifterSwift/Protocols/*.swift'
   end
@@ -33,6 +33,11 @@ Pod::Spec.new do |s|
   # UIKit Extensions
   s.subspec 'UIKit' do |sp|
     sp.source_files  = 'Sources/SwifterSwift/UIKit/*.swift'
+  end
+
+  # FirebaseCores Extensions
+  s.subspec 'FirebaseCores' do |sp|
+    sp.source_files  = 'Sources/SwifterSwift/FirebaseCores/*.swift'
   end
 
 end
