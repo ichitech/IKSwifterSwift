@@ -36,7 +36,7 @@ playground.xcworkspace
 .swiftpm/
 
 ## CocoaPods
-Pods/
+#Pods/
 
 ## Carthage
 Carthage/Build

@@ -13,6 +13,9 @@ def import_pods
     pod 'Alamofire'
     pod 'SwiftSpinner'
     pod 'MBProgressHUD'
+    pod 'Firebase/Crashlytics'
+    pod 'Firebase/Analytics'
+    pod 'Firebase/Core'
 end
 
 target 'SwifterSwift-iOS'  do
