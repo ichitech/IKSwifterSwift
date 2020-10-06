@@ -11,6 +11,7 @@ import UIKit
 import Foundation
 
 // MARK: - Initializers
+// swiftlint:disable superfluous_disable_command identifier_name large_tuple
 public extension UIColor {
     
     convenience init(hexCode: String) {
@@ -42,7 +43,7 @@ public extension UIColor {
     
 }
 
-// MARK:- Properties
+// MARK: - Properties
 public extension UIColor {
     var rgbComponents:(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
         var r:CGFloat = 0
@@ -50,9 +51,9 @@ public extension UIColor {
         var b:CGFloat = 0
         var a:CGFloat = 0
         if getRed(&r, green: &g, blue: &b, alpha: &a) {
-            return (r,g,b,a)
+            return (r, g, b, a)
         }
-        return (0,0,0,0)
+        return (0, 0, 0, 0)
     }
     
     // hue, saturation, brightness and alpha components from UIColor**
@@ -62,17 +63,17 @@ public extension UIColor {
         var brightness:CGFloat = 0
         var alpha:CGFloat = 0
         if getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha){
-            return (hue,saturation,brightness,alpha)
+            return (hue, saturation, brightness, alpha)
         }
-        return (0,0,0,0)
+        return (0, 0, 0, 0)
     }
     
     var rgbString: String {
-        return String(format: "#%02x%02x%02x", Int(rgbComponents.red * 255), Int(rgbComponents.green * 255),Int(rgbComponents.blue * 255))
+        return String(format: "#%02x%02x%02x", Int(rgbComponents.red * 255), Int(rgbComponents.green * 255), Int(rgbComponents.blue * 255))
     }
     
     var rgbaString: String {
-        return String(format: "#%02x%02x%02x%02x", Int(rgbComponents.red * 255), Int(rgbComponents.green * 255),Int(rgbComponents.blue * 255),Int(rgbComponents.alpha * 255) )
+        return String(format: "#%02x%02x%02x%02x", Int(rgbComponents.red * 255), Int(rgbComponents.green * 255), Int(rgbComponents.blue * 255), Int(rgbComponents.alpha * 255) )
     }
 }
 
