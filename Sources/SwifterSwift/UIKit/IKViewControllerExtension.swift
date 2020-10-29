@@ -21,9 +21,10 @@ extension UIViewController {
     static var changeNightMode = Notification.Name("com.ik.changeNightMode")
         
     /// Register the night mode notification for the current viewcontroller.
-    // swiftlint:disable superfluous_disable_command line_length
     func registerForNigthModeNotifications() {
+        // swiftlint:disable superfluous_disable_command line_length
         NotificationCenter.default.addObserver(self, selector: #selector(UserInterfaceProtocol.notificationDidChangeNightMode(_:)), name: UIViewController.changeNightMode, object: nil)
+        // swiftlint:enable superfluous_disable_command line_length
         self.perform(#selector(UserInterfaceProtocol.notificationDidChangeNightMode(_:)), with: nil)
     }
 
@@ -31,7 +32,6 @@ extension UIViewController {
     func unregisterForNigthModeNotifications() {
         NotificationCenter.default.removeObserver(self, name: UIViewController.changeNightMode, object: nil)
     }
-    // swiftlint:enable superfluous_disable_command line_length
 
     #if canImport(MBProgressHUD)
     private func hanldeIndicator(setHidden isHidden: Bool) {

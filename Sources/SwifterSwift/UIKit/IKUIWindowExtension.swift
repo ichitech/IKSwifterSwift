@@ -17,7 +17,7 @@ public extension UIWindow {
         if window == nil {
             window = UIApplication.shared.windows.first
         }
-        return window!
+        return window
     }
     
     var visibleViewController: UIViewController? {

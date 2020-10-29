@@ -10,15 +10,25 @@
 import UIKit
 import Foundation
 
+@available(iOS, introduced: 9.0, deprecated: 13.4, message: "Use NSCoder.color(for:alpha:) instead.")
+public func UIColorFromString(_ string: String, alpha: CGFloat = 1) -> UIColor {
+    return UIColor(hexCode: string, alpha: alpha)
+}
+
+@available(iOS, introduced: 9.0, deprecated: 13.4, message: "Use NSCoder.string(for:) instead.")
+public func NSStringFromUIColor(_ color: UIColor) -> String {
+    return color.rgbString
+}
+
 // MARK: - Initializers
 // swiftlint:disable superfluous_disable_command identifier_name large_tuple
 public extension UIColor {
     
-    convenience init(hexCode: String) {
+    convenience init(hexCode: String, alpha: CGFloat = 1) {
         var r = CGFloat(255)
         var g = CGFloat(255)
         var b = CGFloat(255)
-        var a = CGFloat(1)
+        var a = (alpha <= 1 && alpha >= 0) ? alpha : CGFloat(1)
         var hexColor = hexCode.replacingOccurrences(of: "#", with: "", options: String.CompareOptions.literal, range: nil)
         if hexColor.count == 6 {
             hexColor = hexColor.appending("ff")
@@ -62,7 +72,7 @@ public extension UIColor {
         var saturation:CGFloat = 0
         var brightness:CGFloat = 0
         var alpha:CGFloat = 0
-        if getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha){
+        if getHue(&hue, saturation: &saturation, brightness: &brightness, alpha: &alpha) {
             return (hue, saturation, brightness, alpha)
         }
         return (0, 0, 0, 0)
@@ -79,8 +89,8 @@ public extension UIColor {
 
 // MARK: - Methods
 public extension NSCoder {
-    class func color(for string: String) -> UIColor {
-        return UIColor(hexCode: string)
+    class func color(for string: String, alpha: CGFloat = 1) -> UIColor {
+        return UIColor(hexCode: string, alpha: alpha)
     }
     
     class func string(for color: UIColor) -> String {

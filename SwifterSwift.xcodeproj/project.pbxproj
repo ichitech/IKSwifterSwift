@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		07898B901F278F0800558C97 /* SwifterSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 07898B8F1F278E6300558C97 /* SwifterSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		250829C5252C5EAE0056E8B8 /* FirebaseAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250829C4252C5EAE0056E8B8 /* FirebaseAnalytics.swift */; };
+		25BC2242254AB8D200117CAE /* Pods_SwifterSwift_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4201FC1054A50F45AA59D8 /* Pods_SwifterSwift_iOS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		FE6D4AD325223D6400A41995 /* IKStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4AD225223D6300A41995 /* IKStringExtension.swift */; };
 		FE6D4AD625223E1900A41995 /* IKViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4AD525223E1900A41995 /* IKViewExtension.swift */; };
 		FE6D4ADD25223ED100A41995 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6D4ADC25223ED100A41995 /* Protocols.swift */; };
@@ -16,7 +17,6 @@
 		FEC2965A2528C09300F76E24 /* IKApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC296592528C09300F76E24 /* IKApplicationExtension.swift */; };
 		FEC2965D2528C29500F76E24 /* IKSearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC2965C2528C29500F76E24 /* IKSearchBarExtension.swift */; };
 		FEC2966C2528C71300F76E24 /* IKObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC2966B2528C71300F76E24 /* IKObject.swift */; };
-		FEC2966E2528CBBE00F76E24 /* Pods_SwifterSwift_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4201FC1054A50F45AA59D8 /* Pods_SwifterSwift_iOS.framework */; };
 		FEC2999E2529CDC600F76E24 /* IKUIWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC2999D2529CDC600F76E24 /* IKUIWindowExtension.swift */; };
 		FEC299A12529D48600F76E24 /* IKTableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC299A02529D48600F76E24 /* IKTableViewExtension.swift */; };
 		FEC299A42529D7A500F76E24 /* IKCoderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC299A32529D7A500F76E24 /* IKCoderExtension.swift */; };
@@ -28,6 +28,7 @@
 		07898B8E1F278E6300558C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07898B8F1F278E6300558C97 /* SwifterSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwifterSwift.h; sourceTree = "<group>"; };
 		250829C4252C5EAE0056E8B8 /* FirebaseAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalytics.swift; sourceTree = "<group>"; };
+		25BC227F254AC1D900117CAE /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		2C7440E8AE93EFF03A90A0D4 /* Pods-SwifterSwift-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwifterSwift-iOS.release.xcconfig"; path = "Target Support Files/Pods-SwifterSwift-iOS/Pods-SwifterSwift-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		7B4201FC1054A50F45AA59D8 /* Pods_SwifterSwift_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwifterSwift_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8C1DBF7D499412A9E24CA8 /* Pods-SwifterSwift-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwifterSwift-iOS.debug.xcconfig"; path = "Target Support Files/Pods-SwifterSwift-iOS/Pods-SwifterSwift-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -49,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEC2966E2528CBBE00F76E24 /* Pods_SwifterSwift_iOS.framework in Frameworks */,
+				25BC2242254AB8D200117CAE /* Pods_SwifterSwift_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +89,7 @@
 			children = (
 				07898B8E1F278E6300558C97 /* Info.plist */,
 				07898B8F1F278E6300558C97 /* SwifterSwift.h */,
+				25BC227F254AC1D900117CAE /* module.modulemap */,
 				FE6D4AC225223C9000A41995 /* SwifterSwift */,
 			);
 			path = Sources;

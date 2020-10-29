@@ -1,0 +1,4 @@
+module ObjectiveCPrivateHeader {
+    header "Classes/Helpers/ABDHex.h"
+    export *
+}
