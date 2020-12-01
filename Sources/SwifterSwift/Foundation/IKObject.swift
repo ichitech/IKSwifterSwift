@@ -9,6 +9,8 @@
 #if canImport(Foundation)
 import Foundation
 
+var kNSObjectSenderDataKey = "kNSObjectSenderDataKey"
+
 // MARK: - Methods
 public extension NSObject {
     class var className: String {
@@ -20,6 +22,19 @@ public extension NSObject {
 public extension NSObject {
     var className: String {
         return NSStringFromClass(type(of: self))
+    }
+    
+    var isNull: Bool {
+        return self.isEqual(NSNull())
+    }
+    
+    var sender: Any? {
+        get {
+            return objc_getAssociatedObject(self, &kNSObjectSenderDataKey)
+        }
+        set(senderObject) {
+            objc_setAssociatedObject(self, &kNSObjectSenderDataKey, senderObject, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
     }
 }
 
