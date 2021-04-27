@@ -32,7 +32,8 @@ private extension UIDevice {
     }
 }
 
-public enum AnalyticKey: String, CaseIterable {
+public enum AnalyticKey: String {
+    
     case storeRequestReview
     case reviewAppBad
     case reviewAppUseful
@@ -63,7 +64,7 @@ public enum AnalyticKey: String, CaseIterable {
     }
 }
 
-public class FirebaseAnalytics {
+extension Analytics {
     
     public class func tracking(_ viewController: UIViewController) {
         if let title = viewController.title, !title.isEmpty {

@@ -20,6 +20,7 @@ public extension NSObject {
 
 // MARK: - Properties
 public extension NSObject {
+    
     var className: String {
         return NSStringFromClass(type(of: self))
     }
@@ -35,6 +36,11 @@ public extension NSObject {
         set(senderObject) {
             objc_setAssociatedObject(self, &kNSObjectSenderDataKey, senderObject, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         }
+    }
+    
+    @available(iOS, introduced: 7.0, deprecated: 13.4, message: "Use -sender instead.")
+    var senderObject: Any? {
+        return sender
     }
 }
 
